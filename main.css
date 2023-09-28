@@ -1,74 +1,96 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: Tahoma,Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.repos-content {
-    width: 800px;
-    background-color: #f6f6f6;
-    margin: auto;
+.container {
+  width: 500px;
+  margin: 20px auto;
 }
-.repos-content .get-repos {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #EEE;
+.form {
+  background-color: #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
-.repos-content .get-repos input {
-    width: 100%;
-    flex-grow: 2;
-    padding: 10px 20px;
-    border: none;
-    font-size: 20px;
-    height: 45px;
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  flex: 1;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
-.repos-content .get-repos input:focus {
-    outline: 2px solid #f44336;
+.add {
+  border: none;
+  color: #ffff;
+  background-color: #f44336;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
 }
-.repos-content .get-repos button {
-    width: 140px;
-    margin-left: 10px;
-    height: 45px;
-    background-color: #f44336;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+.tasks {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
-.repos-content .show-data {
-    padding: 20px;
-    background-color: #E0E0E0;
+.tasks .task {
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
-.repos-content .show-data .repo-box {
-    background-color: #FFF;
-    padding: 15px;
-  }
-  .repos-content .show-data .repo-box:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  .repos-content .show-data .repo-box a,
-  .repos-content .show-data .repo-box span {
-    float: right;
-    margin-left: 4px;
-    border-radius: 4px;
-    color: #FFF;
-    font-size: 12px;
-    width: 90px;
-    text-align: center;
-    padding: 4px;
-  }
-  .repos-content .show-data .repo-box a {
-    text-decoration: none;
-    background-color: #E91E63;
-  }
-  .repos-content .show-data .repo-box span {
-    background-color: #009688;
-  }
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+.tasks .task span:last-of-type {
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  color: #ffff;
+  background-color: red;
+  padding: 3px 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.tasks .task span:first-of-type {
+  font-weight: bold;
+  font-size: 10px;
+}
